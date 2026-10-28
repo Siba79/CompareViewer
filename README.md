@@ -56,7 +56,7 @@ Everything else the app needs is built into `CompareViewer.exe`.
 ## Installation
 
 1. Download the release and unzip it to a folder of your choice, for example
-   `D:\Program_D\Compare Viewer\`.
+   `D:\Compare Viewer\`.
 2. Double-click **`CompareViewer.exe`**. There is no installer, and nothing is written to the
    system.
 3. *(Optional)* Add the right-click menu entries: see
