@@ -1,0 +1,45 @@
+Compare Viewer - Freeware License
+
+Copyright (c) 2026 Stefan Karlsson. All rights reserved.
+
+Compare Viewer (the "Software") is freeware. It is free of charge, with no
+ads, no tracking, no time limits and no registration.
+
+1. YOU MAY
+   - Use the Software free of charge, for personal and commercial purposes,
+     on any number of computers.
+   - Share the Software with others, for example by copying it or uploading
+     it to a website, as long as you share the complete, unmodified release
+     package (including this license) and do so free of charge.
+
+2. YOU MAY NOT
+   - Sell the Software, or charge any fee for it or for access to it.
+   - Modify, rename or repackage the Software, or present it as your own.
+   - Decompile, disassemble or otherwise reverse engineer the Software,
+     except where applicable law expressly permits it.
+   - Remove or change copyright notices or this license.
+
+3. OWNERSHIP
+   The Software is licensed, not sold. Stefan Karlsson keeps all copyright
+   and other rights in the Software. Third-party components included in the
+   Software are covered by their own licenses, listed in
+   THIRD_PARTY_LICENSES.txt.
+
+4. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. You use the Software
+   at your own risk. Keep backups of important images: files deleted with the
+   Software go to the Windows Recycle Bin, which may be emptied.
+
+5. LIMITATION OF LIABILITY
+   TO THE EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+   ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING LOSS OF DATA, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR ITS USE.
+
+6. GENERAL
+   This license is governed by the laws of Sweden. If any part of it is found
+   unenforceable, the rest remains in effect. By using the Software you accept
+   this license. If you do not accept it, do not use the Software.
+
+Donations are welcome but never required: https://paypal.me/gazeomatic
