@@ -11,13 +11,14 @@ don't want to keep.
 - 🔒 **100% local.** Nothing is uploaded, and the app needs no internet connection.
 - 🆓 **Freeware.** Free for personal and commercial use, with no ads, no tracking and no time
   limits. See [LICENSE.txt](LICENSE.txt).
-- 🪶 **Lightweight.** A single small `.exe`, using the Microsoft Edge WebView2 engine built into Windows.
+- 🪶 **Lightweight and portable.** One small program folder, no installer, using the Microsoft Edge
+  WebView2 engine built into Windows.
 
 ![Compare Viewer: Slider mode comparing a low-resolution JPEG (A, left) with a 4x upscaled version (B, right)](docs/screenshot_slider.jpg)
 
 *Slider mode: a low-resolution JPEG (A) against a 4× upscaled version (B).*
 
-Version **1.04** · by **Stefan Karlsson**
+Version **1.05** · by **Stefan Karlsson**
 
 ---
 
@@ -51,14 +52,15 @@ Version **1.04** · by **Stefan Karlsson**
 - **Microsoft Edge WebView2 Runtime.** It is preinstalled on Windows 11 and on most Windows 10
   computers. If the app opens as an empty window, install it from Microsoft's WebView2 page.
 
-Everything else the app needs is built into `CompareViewer.exe`.
+Everything else the app needs is included in the program folder.
 
 ## Installation
 
 1. Download the release and unzip it to a folder of your choice, for example
-   `D:\Compare Viewer\`.
+   `D:\Program_D\Compare Viewer\`.
 2. Double-click **`CompareViewer.exe`**. There is no installer, and nothing is written to the
-   system.
+   system. Keep all files in the folder together: the exe needs the files next to it.
+   To start it from the desktop, make a **shortcut** instead of moving the exe.
 3. *(Optional)* Add the right-click menu entries: see
    [Right-click menu in Windows Explorer](#right-click-menu-in-windows-explorer).
 
@@ -359,6 +361,7 @@ PNG, JPEG (`.jpg`, `.jpeg`, `.jpe`, `.jfif`), WebP, AVIF, BMP and GIF (shown as 
 |---|---|
 | "Windows protected your PC" | The app is not code-signed. Click **More info → Run anyway**. |
 | The window stays empty | Install or repair the **Microsoft Edge WebView2 Runtime**. |
+| The app doesn't start, or a DLL is "missing" | The exe was moved out of its folder. Unzip the whole release again and use a shortcut. |
 | No right-click entry | Run `Add_CompareViewer_ContextMenu.reg`. Check that the path in it matches where `CompareViewer.exe` is. On Windows 11, look under **Show more options**. |
 | Right-clicking two images opens two windows | Another program is using port 47613. Close it, or open both images in one go with drag and drop. |
 | "No matching file names found" | Check that you picked the right folders, and that the processed names contain the original names (see [How images are paired](#how-images-are-paired)). Images in subfolders are not included. |
@@ -382,7 +385,7 @@ PNG, JPEG (`.jpg`, `.jpeg`, `.jpe`, `.jfif`), WebP, AVIF, BMP and GIF (shown as 
   with the longest match winning.
 - **Recycle Bin:** deletion uses the Windows shell (`SHFileOperation` with undo enabled).
 - **Native build:** the app is compiled to native machine code, and everything it needs is
-  built into the single `CompareViewer.exe`.
+  included in the program folder. Nothing is unpacked to temporary folders when it starts.
 
 ---
 
@@ -423,6 +426,11 @@ included with every release.
 ---
 
 ## Version history
+
+### 1.05
+- Delivered as a portable **program folder** instead of a single packed exe: faster start, and
+  far fewer antivirus false alarms, because nothing is unpacked to temporary folders.
+- The Visual C++ runtime is included, so no separate install is needed.
 
 ### 1.04
 - **Folder compare:** pair two folders of originals and processed images by name, with prefix
