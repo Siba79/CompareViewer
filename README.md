@@ -2,7 +2,7 @@
 
 **A fast, minimal, dark-mode image comparison app for Windows. Free and fully local.**
 
-Compare Viewer shows two images on top of each other, so you can see exactly what changed between
+CompareViewer shows two images on top of each other, so you can see exactly what changed between
 an original and an edited, upscaled, restored or compressed version. Flip between them, drag a
 slider across, view them side by side, or show the pixel difference. You can also compare **whole
 folders** of originals and processed images pair by pair, and delete the processed versions you
