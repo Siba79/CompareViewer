@@ -1,8 +1,8 @@
-# CompareViewer
+# Compare Viewer
 
 **A fast, minimal, dark-mode image comparison app for Windows. Free and fully local.**
 
-CompareViewer shows two images on top of each other, so you can see exactly what changed between
+Compare Viewer shows two images on top of each other, so you can see exactly what changed between
 an original and an edited, upscaled, restored or compressed version. Flip between them, drag a
 slider across, view them side by side, or show the pixel difference. You can also compare **whole
 folders** of originals and processed images pair by pair, and delete the processed versions you
@@ -14,7 +14,11 @@ don't want to keep.
 - 🪶 **Lightweight and portable.** One small program folder, no installer, using the Microsoft Edge
   WebView2 engine built into Windows.
 
-![CompareViewer: Slider mode comparing a low-resolution JPEG (A, left) with a 4x upscaled version (B, right)](docs/screenshot_slider.jpg)
+### ⬇️ [Download the latest version](https://github.com/Siba79/CompareViewer/releases/latest)
+
+🛡️ [VirusTotal scan of v1.05](https://www.virustotal.com/gui/file/e905c43057478f637ad1a0336cabde8fba0317bcb2d52c6277fa471cfea5d911/detection)
+
+![Compare Viewer: Slider mode comparing a low-resolution JPEG (A, left) with a 4x upscaled version (B, right)](docs/screenshot_slider.jpg)
 
 *Slider mode: a low-resolution JPEG (A) against a 4× upscaled version (B).*
 
@@ -56,8 +60,8 @@ Everything else the app needs is included in the program folder.
 
 ## Installation
 
-1. Download the release and unzip it to a folder of your choice, for example
-   `D:\Program_D\CompareViewer\`.
+1. Download the [latest release](https://github.com/Siba79/CompareViewer/releases/latest) and unzip it to a folder of your choice, for example
+   `D:\Program_D\Compare Viewer\`.
 2. Double-click **`CompareViewer.exe`**. There is no installer, and nothing is written to the
    system. Keep all files in the folder together: the exe needs the files next to it.
    To start it from the desktop, make a **shortcut** instead of moving the exe.
@@ -71,20 +75,20 @@ Everything else the app needs is included in the program folder.
 
 ## Opening images
 
-CompareViewer compares **two images**: **A** (shown with an orange tag) and **B** (blue tag).
+Compare Viewer compares **two images**: **A** (shown with an orange tag) and **B** (blue tag).
 
 | Method | How |
 |---|---|
 | **Drag and drop** | Drop two images on the window. When both images are loaded, dropping a single image on the **left half** replaces A and on the **right half** replaces B. |
 | **Open dialog** | Click the **open button** (first in the toolbar), or press **Ctrl + O**, and select two images. |
-| **Right-click in Explorer** | Select two images → right-click → **Open in CompareViewer** (after adding the menu entries). |
+| **Right-click in Explorer** | Select two images → right-click → **Open in Compare Viewer** (after adding the menu entries). |
 | **Drag onto the exe** | Drag two images onto `CompareViewer.exe` or a shortcut to it. |
 | **Command line** | `CompareViewer.exe original.jpg processed.png` |
 
 **Which image becomes A?** Images are sorted by name **without the extension**, so the original
 normally becomes A: `photo.jpg` is A and `photo_4x_upscaled.png` is B. Press **X** to swap them.
 
-**One window only.** If CompareViewer is already open, images you open from Explorer go into
+**One window only.** If Compare Viewer is already open, images you open from Explorer go into
 that window instead of starting a new one. Opening a single image while a pair is shown replaces B.
 
 ---
@@ -259,7 +263,7 @@ The release includes two registry files:
 
 | File | What it does |
 |---|---|
-| `Add_CompareViewer_ContextMenu.reg` | Adds **Open in CompareViewer** for images and **Compare folders in CompareViewer** for folders |
+| `Add_CompareViewer_ContextMenu.reg` | Adds **Open in Compare Viewer** for images and **Compare folders in Compare Viewer** for folders |
 | `Remove_CompareViewer_ContextMenu.reg` | Removes both entries again |
 
 Double-click the file and confirm. The entries are added **for your user only**, so no
@@ -352,6 +356,9 @@ PNG, JPEG (`.jpg`, `.jpeg`, `.jpe`, `.jfif`), WebP, AVIF, BMP and GIF (shown as 
 - The only internet link is the optional **♥ Support** button, which opens the donation page in
   your normal browser.
 - Deleting always goes to the **Recycle Bin**, never straight to permanent deletion.
+- **Virus scan:** the v1.05 download was checked on
+  [VirusTotal](https://www.virustotal.com/gui/file/e905c43057478f637ad1a0336cabde8fba0317bcb2d52c6277fa471cfea5d911/detection).
+  SHA-256: `e905c43057478f637ad1a0336cabde8fba0317bcb2d52c6277fa471cfea5d911`
 
 ---
 
@@ -391,7 +398,7 @@ PNG, JPEG (`.jpg`, `.jpeg`, `.jpe`, `.jfif`), WebP, AVIF, BMP and GIF (shown as 
 
 ## Support the project
 
-CompareViewer is free, and it will stay free. If it saves you time, a small donation is very
+Compare Viewer is free, and it will stay free. If it saves you time, a small donation is very
 welcome and helps further development:
 
 ### ♥ [paypal.me/gazeomatic](https://paypal.me/gazeomatic)
@@ -402,7 +409,7 @@ You can also use the **♥** button in the app's toolbar or help panel.
 
 ## License and credits
 
-CompareViewer is **freeware**:
+Compare Viewer is **freeware**:
 
 | ✅ You may | ❌ You may not |
 |---|---|
