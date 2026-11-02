@@ -14,9 +14,11 @@ don't want to keep.
 - 🪶 **Lightweight and portable.** One small program folder, no installer, using the Microsoft Edge
   WebView2 engine built into Windows.
 
-### ⬇️ [Download the latest version](https://github.com/Siba79/CompareViewer/releases/latest)
+###### <span style="color:#e64340"> </span><span style="color:#3370ff">CompareViewer is not open source software and this repo *DOES NOT* contain the source code of CompareViewer.</span>
 
-🛡️ [VirusTotal scan of v1.05](https://www.virustotal.com/gui/file/e905c43057478f637ad1a0336cabde8fba0317bcb2d52c6277fa471cfea5d911/detection)
+##### ⬇️ [Download the latest version](https://github.com/Siba79/CompareViewer/releases/latest)
+
+###### 🛡️ [VirusTotal scan of v1.05](https://www.virustotal.com/gui/file/e905c43057478f637ad1a0336cabde8fba0317bcb2d52c6277fa471cfea5d911/detection)
 
 ![Compare Viewer: Slider mode comparing a low-resolution JPEG (A, left) with a 4x upscaled version (B, right)](docs/screenshot_slider.jpg)
 
@@ -77,13 +79,13 @@ Everything else the app needs is included in the program folder.
 
 Compare Viewer compares **two images**: **A** (shown with an orange tag) and **B** (blue tag).
 
-| Method | How |
-|---|---|
-| **Drag and drop** | Drop two images on the window. When both images are loaded, dropping a single image on the **left half** replaces A and on the **right half** replaces B. |
-| **Open dialog** | Click the **open button** (first in the toolbar), or press **Ctrl + O**, and select two images. |
-| **Right-click in Explorer** | Select two images → right-click → **Open in Compare Viewer** (after adding the menu entries). |
-| **Drag onto the exe** | Drag two images onto `CompareViewer.exe` or a shortcut to it. |
-| **Command line** | `CompareViewer.exe original.jpg processed.png` |
+| Method                      | How                                                                                                                                                       |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Drag and drop**           | Drop two images on the window. When both images are loaded, dropping a single image on the **left half** replaces A and on the **right half** replaces B. |
+| **Open dialog**             | Click the **open button** (first in the toolbar), or press **Ctrl + O**, and select two images.                                                           |
+| **Right-click in Explorer** | Select two images → right-click → **Open in Compare Viewer** (after adding the menu entries).                                                             |
+| **Drag onto the exe**       | Drag two images onto `CompareViewer.exe` or a shortcut to it.                                                                                             |
+| **Command line**            | `CompareViewer.exe original.jpg processed.png`                                                                                                            |
 
 **Which image becomes A?** Images are sorted by name **without the extension**, so the original
 normally becomes A: `photo.jpg` is A and `photo_4x_upscaled.png` is B. Press **X** to swap them.
@@ -98,15 +100,18 @@ that window instead of starting a new one. Opening a single image while a pair i
 Choose a mode in the toolbar or with the number keys. **Flip** is the default.
 
 ### 🔁 Flip (2)
+
 Shows A or B in the same place. **Tap Space** to switch between them. This is the best way to
 spot small differences, because your eye catches the change. A label at the top shows which image
 you are looking at.
 
 ### 🎚️ Slider (1)
+
 A on the left, B on the right, split by a divider. **Click or drag anywhere** in the image to move
 the divider.
 
 ### ◫ Side by side (3)
+
 A and B next to each other. Zoom and pan are **synchronized**, so both panes always show the
 same area.
 
@@ -116,10 +121,10 @@ same area.
 
 The **Blend** buttons (or the **B** key, which cycles through them) lay B on top of A:
 
-| Blend | What you see |
-|---|---|
-| **Off** | The normal comparison modes above |
-| **50%** | B at 50% opacity over A. Good for checking alignment and ghosting. |
+| Blend    | What you see                                                                                                                                            |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Off**  | The normal comparison modes above                                                                                                                       |
+| **50%**  | B at 50% opacity over A. Good for checking alignment and ghosting.                                                                                      |
 | **Diff** | The **difference** between A and B. Black means identical, and anything bright is a change. Ideal for seeing exactly what a filter or AI model altered. |
 
 ![Diff mode: only the edges where the two images differ light up](docs/screenshot_diff.jpg)
@@ -127,17 +132,18 @@ The **Blend** buttons (or the **B** key, which cycles through them) lay B on top
 *Diff mode: only the places where A and B differ light up.*
 
 ### Aligning B to A
+
 In 50% and Diff mode, B can be moved and resized, for example when a processed image was cropped
 or shifted slightly:
 
-| Action | How |
-|---|---|
-| Move B | Drag inside B |
-| Resize B (aspect kept) | Drag a corner handle |
-| Resize B freely | Hold **Shift** while dragging a corner |
-| Fine-scale B at the cursor | **Alt + scroll** |
-| Nudge B by 1 px | **Arrow keys** (**Shift** = 10 px) |
-| Reset alignment | **R**, or the **Reset** button in the status bar |
+| Action                     | How                                              |
+| -------------------------- | ------------------------------------------------ |
+| Move B                     | Drag inside B                                    |
+| Resize B (aspect kept)     | Drag a corner handle                             |
+| Resize B freely            | Hold **Shift** while dragging a corner           |
+| Fine-scale B at the cursor | **Alt + scroll**                                 |
+| Nudge B by 1 px            | **Arrow keys** (**Shift** = 10 px)               |
+| Reset alignment            | **R**, or the **Reset** button in the status bar |
 
 The status bar shows B's current offset and scale.
 
@@ -155,18 +161,18 @@ Both images are **automatically fitted** to the window when you open them.
 
 ## Zoom and pan
 
-| Action | How |
-|---|---|
-| Zoom in or out at the cursor | **Scroll wheel** |
-| Zoom in (Photoshop-style steps) | **Space + Ctrl + click** |
-| Zoom out (Photoshop-style steps) | **Space + Alt + click** |
-| Zoom in or out at the centre | **Ctrl + =** / **Ctrl + −** |
-| Pan | **Space + drag**, **right-drag** or **middle-drag** |
-| Pan with the wheel | **Ctrl + scroll** (add **Shift** for sideways) |
-| Pan with the keyboard | **Arrow keys** (**Shift** = bigger steps). In folder compare, ← and → change pair instead; **Shift + ← →** still pans. |
-| Fit to window | **F**, **Ctrl + 0**, **double-click**, or the fit button |
-| Actual pixels (100%) | **Z** |
-| Toggle fit / 100% | Click the zoom percentage in the status bar |
+| Action                           | How                                                                                                                    |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Zoom in or out at the cursor     | **Scroll wheel**                                                                                                       |
+| Zoom in (Photoshop-style steps)  | **Space + Ctrl + click**                                                                                               |
+| Zoom out (Photoshop-style steps) | **Space + Alt + click**                                                                                                |
+| Zoom in or out at the centre     | **Ctrl + =** / **Ctrl + −**                                                                                            |
+| Pan                              | **Space + drag**, **right-drag** or **middle-drag**                                                                    |
+| Pan with the wheel               | **Ctrl + scroll** (add **Shift** for sideways)                                                                         |
+| Pan with the keyboard            | **Arrow keys** (**Shift** = bigger steps). In folder compare, ← and → change pair instead; **Shift + ← →** still pans. |
+| Fit to window                    | **F**, **Ctrl + 0**, **double-click**, or the fit button                                                               |
+| Actual pixels (100%)             | **Z**                                                                                                                  |
+| Toggle fit / 100%                | Click the zoom percentage in the status bar                                                                            |
 
 Photoshop-style zoom uses the familiar steps (…, 50%, 66.7%, 100%, 200%, 300%, …, 6400%).
 When you zoom in far, pixels are shown sharp and square instead of smoothed, so you can inspect
@@ -199,16 +205,17 @@ A and B yourself.) If you right-click a single folder, the folder dialog opens w
 you can pick the processed folder.
 
 ### How images are paired
+
 Files are paired **by name**. Case and file extension don't matter. A processed file matches an
 original when it has the **same name**, or the original's name with an **added prefix or suffix**:
 
-| Original (A) | Processed (B) | Paired? |
-|---|---|---|
-| `photo.jpg` | `photo.png` | ✅ same name |
-| `photo.jpg` | `photo_4x_Remacri_Upscaled.jpg` | ✅ suffix |
-| `photo.jpg` | `upscaled_photo.png` | ✅ prefix |
-| `photo.jpg` | `v2-photo-final.webp` | ✅ prefix and suffix |
-| `img1.jpg` | `img10_upscaled.png` | ❌ correct: `img10` is a different image |
+| Original (A) | Processed (B)                   | Paired?                                 |
+| ------------ | ------------------------------- | --------------------------------------- |
+| `photo.jpg`  | `photo.png`                     | ✅ same name                             |
+| `photo.jpg`  | `photo_4x_Remacri_Upscaled.jpg` | ✅ suffix                                |
+| `photo.jpg`  | `upscaled_photo.png`            | ✅ prefix                                |
+| `photo.jpg`  | `v2-photo-final.webp`           | ✅ prefix and suffix                     |
+| `img1.jpg`   | `img10_upscaled.png`            | ❌ correct: `img10` is a different image |
 
 - The prefix or suffix must be separated by one of: `_` `-` `.` space `(` `)` `[` `]` `{` `}` `+` `,` `~`
 - If several originals could match, the **longest** name wins.
@@ -218,11 +225,12 @@ original when it has the **same name**, or the original's name with an **added p
 - Pairs are sorted naturally by name (`2` comes before `10`).
 
 ### Browsing the pairs
-| Action | How |
-|---|---|
+
+| Action               | How                                                                          |
+| -------------------- | ---------------------------------------------------------------------------- |
 | Next / previous pair | **→ / ←**, **Page Down / Page Up**, or the **‹ ›** buttons in the status bar |
-| First / last pair | **Home / End** |
-| Pair list | **L**, or the **☰ List** button |
+| First / last pair    | **Home / End**                                                               |
+| Pair list            | **L**, or the **☰ List** button                                              |
 
 - The status bar shows your position, for example **15 / 1553**.
 - **Your zoom and position are kept** when you move to the next pair, as long as the images
@@ -261,10 +269,10 @@ handy for sorting out bad results while you review a batch.
 
 The release includes two registry files:
 
-| File | What it does |
-|---|---|
-| `Add_CompareViewer_ContextMenu.reg` | Adds **Open in Compare Viewer** for images and **Compare folders in Compare Viewer** for folders |
-| `Remove_CompareViewer_ContextMenu.reg` | Removes both entries again |
+| File                                   | What it does                                                                                     |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `Add_CompareViewer_ContextMenu.reg`    | Adds **Open in Compare Viewer** for images and **Compare folders in Compare Viewer** for folders |
+| `Remove_CompareViewer_ContextMenu.reg` | Removes both entries again                                                                       |
 
 Double-click the file and confirm. The entries are added **for your user only**, so no
 administrator rights are needed.
@@ -282,46 +290,50 @@ On **Windows 11**, the entries are under **Show more options** (or **Shift + rig
 Press **?** or **H** in the app to show this list.
 
 ### View
-| Key | Action |
-|---|---|
-| **Space** (tap) | Flip between A and B |
-| **1 · 2 · 3** | Slider · Flip · Side by side |
-| **B** | Cycle blend: Off · 50% · Diff |
-| **X** | Swap A and B |
-| **F** · **Ctrl + 0** · double-click | Fit to window |
-| **Z** | Actual pixels (100%) |
-| **Ctrl + = / Ctrl + −** | Zoom in / out |
-| **Ctrl + O** | Open images |
-| **Ctrl + Shift + O** | Compare two folders |
-| **? / H** | Show or hide the shortcut list |
-| **Esc** | Close panels and dialogs |
+
+| Key                                 | Action                         |
+| ----------------------------------- | ------------------------------ |
+| **Space** (tap)                     | Flip between A and B           |
+| **1 · 2 · 3**                       | Slider · Flip · Side by side   |
+| **B**                               | Cycle blend: Off · 50% · Diff  |
+| **X**                               | Swap A and B                   |
+| **F** · **Ctrl + 0** · double-click | Fit to window                  |
+| **Z**                               | Actual pixels (100%)           |
+| **Ctrl + = / Ctrl + −**             | Zoom in / out                  |
+| **Ctrl + O**                        | Open images                    |
+| **Ctrl + Shift + O**                | Compare two folders            |
+| **? / H**                           | Show or hide the shortcut list |
+| **Esc**                             | Close panels and dialogs       |
 
 ### Mouse
-| Action | Result |
-|---|---|
-| Scroll | Zoom at the cursor |
-| Ctrl + scroll | Pan (Shift for sideways) |
-| Space + Ctrl + click | Zoom in, Photoshop steps |
-| Space + Alt + click | Zoom out, Photoshop steps |
-| Space + drag · right-drag · middle-drag | Pan |
-| Click or drag (Slider mode) | Move the divider |
+
+| Action                                  | Result                    |
+| --------------------------------------- | ------------------------- |
+| Scroll                                  | Zoom at the cursor        |
+| Ctrl + scroll                           | Pan (Shift for sideways)  |
+| Space + Ctrl + click                    | Zoom in, Photoshop steps  |
+| Space + Alt + click                     | Zoom out, Photoshop steps |
+| Space + drag · right-drag · middle-drag | Pan                       |
+| Click or drag (Slider mode)             | Move the divider          |
 
 ### Blend alignment (50% and Diff)
-| Key / action | Result |
-|---|---|
-| Drag B | Move |
+
+| Key / action  | Result                             |
+| ------------- | ---------------------------------- |
+| Drag B        | Move                               |
 | Drag a corner | Resize, aspect kept (Shift = free) |
-| Alt + scroll | Fine-scale at the cursor |
-| Arrow keys | Nudge 1 px (Shift = 10 px) |
-| R | Reset alignment |
+| Alt + scroll  | Fine-scale at the cursor           |
+| Arrow keys    | Nudge 1 px (Shift = 10 px)         |
+| R             | Reset alignment                    |
 
 ### Folder compare
-| Key | Action |
-|---|---|
+
+| Key                           | Action                                                                              |
+| ----------------------------- | ----------------------------------------------------------------------------------- |
 | **← → · Page Up / Page Down** | Previous / next pair (in blend mode the arrows nudge B, so use Page Up / Page Down) |
-| **Home · End** | First / last pair |
-| **L** | Pair list with filter |
-| **Delete** | Move B (processed) to the Recycle Bin |
+| **Home · End**                | First / last pair                                                                   |
+| **L**                         | Pair list with filter                                                               |
+| **Delete**                    | Move B (processed) to the Recycle Bin                                               |
 
 ---
 
@@ -364,16 +376,16 @@ PNG, JPEG (`.jpg`, `.jpeg`, `.jpe`, `.jfif`), WebP, AVIF, BMP and GIF (shown as 
 
 ## Troubleshooting
 
-| Problem | Solution |
-|---|---|
-| "Windows protected your PC" | The app is not code-signed. Click **More info → Run anyway**. |
-| The window stays empty | Install or repair the **Microsoft Edge WebView2 Runtime**. |
-| The app doesn't start, or a DLL is "missing" | The exe was moved out of its folder. Unzip the whole release again and use a shortcut. |
-| No right-click entry | Run `Add_CompareViewer_ContextMenu.reg`. Check that the path in it matches where `CompareViewer.exe` is. On Windows 11, look under **Show more options**. |
-| Right-clicking two images opens two windows | Another program is using port 47613. Close it, or open both images in one go with drag and drop. |
-| "No matching file names found" | Check that you picked the right folders, and that the processed names contain the original names (see [How images are paired](#how-images-are-paired)). Images in subfolders are not included. |
-| Space does nothing | Click on the image first, so the window has keyboard focus (not a text field). |
-| Delete does nothing | Delete only works in folder compare. |
+| Problem                                      | Solution                                                                                                                                                                                       |
+| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| "Windows protected your PC"                  | The app is not code-signed. Click **More info → Run anyway**.                                                                                                                                  |
+| The window stays empty                       | Install or repair the **Microsoft Edge WebView2 Runtime**.                                                                                                                                     |
+| The app doesn't start, or a DLL is "missing" | The exe was moved out of its folder. Unzip the whole release again and use a shortcut.                                                                                                         |
+| No right-click entry                         | Run `Add_CompareViewer_ContextMenu.reg`. Check that the path in it matches where `CompareViewer.exe` is. On Windows 11, look under **Show more options**.                                      |
+| Right-clicking two images opens two windows  | Another program is using port 47613. Close it, or open both images in one go with drag and drop.                                                                                               |
+| "No matching file names found"               | Check that you picked the right folders, and that the processed names contain the original names (see [How images are paired](#how-images-are-paired)). Images in subfolders are not included. |
+| Space does nothing                           | Click on the image first, so the window has keyboard focus (not a text field).                                                                                                                 |
+| Delete does nothing                          | Delete only works in folder compare.                                                                                                                                                           |
 
 ---
 
@@ -411,16 +423,17 @@ You can also use the **♥** button in the app's toolbar or help panel.
 
 Compare Viewer is **freeware**:
 
-| ✅ You may | ❌ You may not |
-|---|---|
-| Use it for free, privately and commercially, on any number of computers | Sell it or charge for it |
-| Share the complete, unchanged zip for free | Modify, repackage or reverse engineer it |
+| ✅ You may                                                               | ❌ You may not                            |
+| ----------------------------------------------------------------------- | ---------------------------------------- |
+| Use it for free, privately and commercially, on any number of computers | Sell it or charge for it                 |
+| Share the complete, unchanged zip for free                              | Modify, repackage or reverse engineer it |
 
 See [LICENSE.txt](LICENSE.txt) for the full license.
 
 Copyright © 2026 **Stefan Karlsson**
 
 Built with:
+
 - [pywebview](https://pywebview.flowrl.com/) (BSD 3-Clause)
 - [Python](https://www.python.org/) (PSF License)
 - [Nuitka](https://nuitka.net/) (Apache 2.0) to compile the release build
@@ -435,11 +448,13 @@ included with every release.
 ## Version history
 
 ### 1.05
+
 - Delivered as a portable **program folder** instead of a single packed exe: faster start, and
   far fewer antivirus false alarms, because nothing is unpacked to temporary folders.
 - The Visual C++ runtime is included, so no separate install is needed.
 
 ### 1.04
+
 - **Folder compare:** pair two folders of originals and processed images by name, with prefix
   and suffix matching, a pair list with filter, and unmatched files listed.
 - **Delete key:** move processed images to the Recycle Bin, with a confirmation dialog.
